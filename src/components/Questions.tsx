@@ -2,7 +2,7 @@ function Questions() {
     return (
         <div id="questions" className="questions-section">
             <div className="questions-left">
-                <h1>Any Qgit commit -m "Describe what you changed"stions?</h1>
+                <h1>Any Questions?</h1>
             </div>
             <form className="questions-form" action="https://formspree.io/f/mvgqzwan" method="POST">
                 <label>
