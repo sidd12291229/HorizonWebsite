@@ -26,7 +26,7 @@ function NavBar() {
     <>
       <nav id="navbar" className={showNavbar ? 'visible' : 'hidden'}>
         <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
+          <li><a href="#">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#questions">Questions</a></li>
           <li><a href="#contacts">Contacts</a></li>

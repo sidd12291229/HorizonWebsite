@@ -8,13 +8,14 @@ a{
 }
 
 #navbar.visible {
-  opacity: 0.90;
+  opacity: 1;
   top: 0;
 }
 
 #navbar.hidden {
   opacity: 0;
   top: -80%;
+  height: 0%;
 }
 
 
@@ -87,7 +88,7 @@ body, html {
   display: flex;
   justify-content: center;
   gap: 3rem;
-  padding: 2rem 0;
+  padding-top: 1.5rem;
 }
 
 .home-links {
@@ -164,7 +165,6 @@ body, html {
 
 .services {
   background-color: white;
-  padding: 4rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -188,9 +188,8 @@ body, html {
 .service-box {
   background-color: white;
   border-radius: 12px;
-  padding: 2rem;
+  padding: 1rem;
   width: 300px;
-  min-height: 250px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
@@ -218,15 +217,31 @@ body, html {
 
 .questions-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4rem;
+  flex-direction: column; /* stack children vertically */
+  align-items: center;    /* center heading + form horizontally */
   background-color: white;
-  padding: 4rem 2rem;
-  max-width: 1200px;
+  padding: 4.2rem 2rem;
+  max-width: 800px;
   margin: 0 auto;
+  gap: 2rem; /* space between heading and form */
 }
+
+.questions-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.questions-form {
+  width: 100%;        /* take up full width */
+  max-width: 600px;   /* but don’t stretch too wide */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 
 .questions-left {
   flex: 1;
@@ -286,4 +301,53 @@ body, html {
 .questions-form button:hover {
   background-color: #ffeaa7;
   transform: scale(1.03);
+}
+
+.contacts {
+  background-color: white;
+  padding: 0rem 2rem;
+  padding-bottom: 4rem;
+}
+
+.contacts-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+.contacts-container {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black; /* outline */
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.contact-card {
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid black;
+  background-color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:last-child {
+  border-bottom: none; 
+}
+
+.contact-card h3,
+.contact-card p {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1a1a1a;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-card:hover h3,
+.contact-card:hover p {
+  color: #f6e58d;
+  transform: translateX(10px);
 }

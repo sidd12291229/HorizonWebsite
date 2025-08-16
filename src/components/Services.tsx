@@ -5,22 +5,19 @@ function Services() {
                 <h2 className="services-title">Our Services</h2>
                 <div className="services-container">
                     <div className="service-box">
-                        <h3>One Piece</h3>
+                        <h3>High School Horizons</h3>
                         <p>
-                            Irure anim laborum tempor sunt reprehenderit ullamco aliquip eu aliquip adipisicing sunt. Do qui sint tempor aute consectetur ullamco tempor amet. Deserunt et id occaecat amet eu qui culpa velit anim ea consectetur eiusmod. Lorem ut elit sit occaecat cupidatat nostrud in sunt minim adipisicing cupidatat proident quis. Et quis amet deserunt ad. Ut aliquip incididunt nulla labore amet occaecat eiusmod anim.                        
-                        </p>
+                            Supporting high school students with challenging academic paths like AP/IB, guiding extracurricular choices, and assisting with university applications.                        </p>
                     </div>
                     <div className="service-box">
-                        <h3>Bleach</h3>
+                        <h3>Elementary Enrichment</h3>
                         <p>
-                            Irure anim laborum tempor sunt reprehenderit ullamco aliquip eu aliquip adipisicing sunt. Do qui sint tempor aute consectetur ullamco tempor amet. Deserunt et id occaecat amet eu qui culpa velit anim ea consectetur eiusmod. Lorem ut elit sit occaecat cupidatat nostrud in sunt minim adipisicing cupidatat proident quis. Et quis amet deserunt ad. Ut aliquip incididunt nulla labore amet occaecat eiusmod anim.                        
-                        </p>
+                            Preparing elementary students for high school by teaching them how to navigate course selection, academic expectations, and social challenges.                        </p>
                     </div>
                     <div className="service-box">
-                        <h3>Naruto</h3>
+                        <h3>Fundraising for the Future</h3>
                         <p>
-                            Irure anim laborum tempor sunt reprehenderit ullamco aliquip eu aliquip adipisicing sunt. Do qui sint tempor aute consectetur ullamco tempor amet. Deserunt et id occaecat amet eu qui culpa velit anim ea consectetur eiusmod. Lorem ut elit sit occaecat cupidatat nostrud in sunt minim adipisicing cupidatat proident quis. Et quis amet deserunt ad. Ut aliquip incididunt nulla labore amet occaecat eiusmod anim.
-                        </p>
+                            Raising funds to support young students in underprivileged countries, opening doors to education and opportunity.                        </p>
                     </div>
                 </div>
             </div>
