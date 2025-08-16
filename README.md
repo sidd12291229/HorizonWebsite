@@ -1,54 +1,89 @@
-# React + TypeScript + Vite
+# 🌐 Horizon Network Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A youth-led nonprofit website built with **React + TypeScript**, showcasing our mission, services, and contact information.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Home Page** – Intro to Horizon Network with mission statement and branding.
+- **Services Page** – Details about High School Horizons, Elementary Enrichment, and Fundraising for the Future.
+- **Questions Form** – Contact form powered by [Formspree](https://formspree.io/) with optional name/email handling.
+- **Contacts Section** – Links to Instagram, Discord, and WhatsApp for easy connection.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- [React](https://react.dev/) (with JSX/TSX)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/) (or CRA if you used that)
+- CSS (custom styling with responsive layout)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Project Structure
+
+```
+src/
+├── assets/               # Images, SVGs, static files
+├── components/
+│   ├── Home.tsx          # Hero section with intro + image
+│   ├── Services.tsx      # Services section
+│   ├── Questions.tsx     # Formspree-powered form
+│   ├── Contacts.tsx      # Contact links
+│   └── ...
+├── App.tsx               # Main app container
+├── main.tsx              # React entry point
+└── index.css             # Global styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ⚡ Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 1. Clone repo
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+git clone https://github.com/yourusername/horizon-network.git
+cd horizon-network
 ```
+
+### 2. Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Run locally
+
+```bash
+npm run dev
+```
+
+Project will be live at [http://localhost:5173](http://localhost:5173).
+
+### 4. Build for production
+
+```bash
+npm run build
+```
+
+## 📬 Form Handling
+
+The **Questions form** uses [Formspree](https://formspree.io/). Submissions go to the configured endpoint:
+
+```tsx
+<form
+  action="https://formspree.io/f/mvgqzwan"
+  method="POST"
+>
+```
+
+- If **name** is left blank → defaults to `"No name"`
+- If **email** is left blank → defaults to `"NoEmail@gmail.com"`
+
+## 🌍 Contacts
+
+- [Instagram](https://www.instagram.com/horizonnetworkbc/)
+- [Discord](https://discord.gg/3G4qnpFn)
+- [WhatsApp](https://wa.me/19876543210)
+
+## 📜 License
+
+MIT License © Horizon Network
+
